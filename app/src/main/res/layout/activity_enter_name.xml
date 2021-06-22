@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.triviaapp.view.EnterNameActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.EnterNameActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="40dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="40dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/horizontalGuideline"
+            app:layout_constraintStart_toStartOf="@id/verticalGuideline"
+            android:text="@string/what_is_your_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gilroyetrabold"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+            app:layout_constraintStart_toStartOf="@id/verticalGuideline"
+            app:layout_constraintEnd_toEndOf="@id/verticalGuidelineEnd"
+            android:background="@drawable/stroke_bg"
+            android:hint="@string/enter_name"
+            android:text="@={activity.name}"
+            android:padding="12dp"
+            android:fontFamily="@font/gilroysemibold"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:maxLength="40"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/etName"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/verticalGuideline"
+            app:layout_constraintWidth_percent="0.4"
+            android:background="@drawable/yellow_bg"
+            android:text="@string/next"
+            android:paddingHorizontal="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gilroyetrabold" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

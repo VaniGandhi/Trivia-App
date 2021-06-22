@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Trivia App</string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="next">Next</string>
+    <string name="who_is_the_best_cricketer_in_the_world">Who is the best cricketer in the world?</string>
+    <string name="what_are_the_colors_in_the_indian_national_flag_select_all">What are the colors in the Indian national flag? Select all:</string>
+    <string name="what_are_the_colors_in_the_indian_national">What are the colors in the Indian national flag?</string>
+    <string name="unable_to_connect_to_internet">Unable to connect to Internet</string>
+    <string name="summary">Summary</string>
+    <string name="game_1">Game 1 : </string>
+    <string name="name">Name :</string>
+    <string name="answer">Answer : </string>
+    <string name="here_are_the_answers_selected">Here are the answers selected</string>
+    <string name="finish">Finish</string>
+    <string name="history">History</string>
+    <string name="enter_name">Enter name</string>
+</resources>
